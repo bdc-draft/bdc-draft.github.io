@@ -1,9 +1,6 @@
 //=require jquery/dist/jquery.min.js
 //=require extention/popper.min.js
 //=require bootstrap/dist/js/bootstrap.min.js
-//=require extention/slick.js
-//=require lightgallery/dist/js/lightgallery-all.min.js
-//=require extention/menuzord.js
 
 $(function() {
   // code here
