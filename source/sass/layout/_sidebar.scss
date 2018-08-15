@@ -1,0 +1,68 @@
+//
+// Layout :: SideBar
+// --------------------------------------------------
+.sidebar {
+  height: 100vh;
+  padding: 15px 0;
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      display: block;
+
+      a {
+        text-decoration: none;
+        color: $white;
+        transition: $transition-base;
+
+        &.active {
+          background-color: $black;
+        }
+      }
+    }
+  }
+
+  //Level 1
+  > ul {
+    > li {
+      a {
+        line-height: 40px;
+        height: 40px;
+        display: block;
+        padding: 0;
+        padding-left: 15px;
+
+        //Sidebar menu active leve 1
+        &[aria-expanded="true"] {
+
+        }
+      }
+    }
+
+    //Level 2 and more
+    ul > li {
+      a {
+        line-height: 32px;
+        height: 32px;
+        padding-left: 30px;
+
+        //Sidebar menu active leve 2
+        &[aria-expanded="true"] {
+
+        }
+      }
+    }
+  }
+}
+
+// Verision Dark
+.dark {
+
+}
+
+// Verision Dark
+.light {
+
+}
